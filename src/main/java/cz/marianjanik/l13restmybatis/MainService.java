@@ -1,4 +1,4 @@
-package cz.marianjanik.L13RESTmyBatis;
+package cz.marianjanik.l13restmybatis;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

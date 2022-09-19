@@ -1,4 +1,4 @@
-package cz.marianjanik.L13RESTmyBatis;
+package cz.marianjanik.l13restmybatis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

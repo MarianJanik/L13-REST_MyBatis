@@ -1,4 +1,4 @@
-package cz.marianjanik.L13RESTmyBatis;
+package cz.marianjanik.l13restmybatis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

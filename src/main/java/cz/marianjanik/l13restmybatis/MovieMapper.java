@@ -1,4 +1,4 @@
-package cz.marianjanik.L13RESTmyBatis;
+package cz.marianjanik.l13restmybatis;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
@@ -9,10 +9,12 @@ import java.util.List;
 
 public interface MovieMapper {
 
-    @Select("SELECT * FROM movie WHERE id=#{idMovie}")
+    @Select("SELECT id AS idMovie,name,year_of_production AS yearOfProduction,genre,my_score AS myScore " +
+            "FROM movie WHERE id=#{idMovie}")
     Movie getMovieById(int idMovie);
 
-    @Select("SELECT * FROM movie")
+    @Select("SELECT id AS idMovie,name,year_of_production AS yearOfProduction,genre,my_score AS myScore " +
+            "FROM movie")
     List<Movie> getAllMovie();
 
     @Insert("INSERT INTO movie (name, year_of_production, genre, my_score) " +
